@@ -1,16 +1,25 @@
-# desktop_base
+# Flutter desktop base
 
-A new Flutter project.
+A starting base for desktop apps. Skeleton desktop app for [Go Flutter](https://github.com/go-flutter-desktop/go-flutter) based on the [Desktopia](https://github.com/synw/desktopia) package
 
-## Getting Started
+## Usage
 
-This project is a starting point for a Flutter application.
+### Configure the layout
 
-A few resources to get you started if this is your first Flutter project:
+Open `desktop.dart` to declare your main app layout
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Set the app zones
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Go into the `zones` folder and set your app zones widgets. Declare the zones in `appzones.dart`
+
+### Set the menu
+
+The main menu bar is configurable in `menu.dart`
+
+### Update a zone
+
+Provide the name of the zone and a widget:
+
+   ```dart
+   zones.update("sidebar", MyWidget());
+   ```
