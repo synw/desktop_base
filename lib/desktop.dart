@@ -78,7 +78,7 @@ class _DesktopPageState extends State<DesktopPage> {
                                 flex: 2,
                                 child: SingleChildScrollView(
                                     child: zStore.widgetForZone("sidebar"))),
-                            DesktopVerticalDivider(),
+                            const DesktopVerticalDivider(),
                             Expanded(
                               flex: 8,
                               child: SingleChildScrollView(
